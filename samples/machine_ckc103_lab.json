@@ -1,0 +1,472 @@
+{
+  "machines": [
+    {
+      "machine": {
+        "id": "BJlcpESk2B",
+        "name": "Cisco Kinetic - ckc103 lab",
+        "state": "stopped",
+        "metadata": {
+          "owner": "anon",
+          "lastModified": 1574083790602,
+          "lastModifiedBy": "unknown",
+          "machineservice": {
+            "id": "machines-rkeKzeBknH"
+          }
+        },
+        "streamsheets": [
+          {
+            "id": "H1f9TVr13S",
+            "name": "S1",
+            "loop": {
+              "path": "",
+              "enabled": false
+            },
+            "inbox": {
+              "max": 20,
+              "type": "Inbox",
+              "id": "SJ79aVSJ2r",
+              "stream": null
+            },
+            "sheet": {
+              "cells": {
+                "B1": {
+                  "value": "lab url: ",
+                  "type": "string",
+                  "level": 0
+                },
+                "C1": {
+                  "value": "https://developer.cisco.com/learning/modules/cdp/ckc103/step/2",
+                  "type": "string",
+                  "level": 0
+                },
+                "B3": {
+                  "value": "query",
+                  "type": "string",
+                  "level": 0
+                },
+                "C3": {
+                  "value": "Find",
+                  "type": "string",
+                  "level": 0
+                },
+                "C4": {
+                  "value": "Light",
+                  "type": "string",
+                  "level": 1
+                },
+                "C5": {
+                  "value": "sid",
+                  "type": "string",
+                  "level": 2
+                },
+                "C6": {
+                  "value": "ne",
+                  "type": "string",
+                  "level": 3
+                },
+                "B8": {
+                  "formula": "CKC.QUERY(|ckc_producer,JSON(C3:D6),INBOX())",
+                  "value": "#DISCONNECTED",
+                  "type": "undefined",
+                  "level": 0,
+                  "references": [
+                    "|ckc_producer"
+                  ]
+                }
+              },
+              "namedCells": {},
+              "graphCells": {},
+              "properties": {
+                "sheet": {},
+                "cols": {},
+                "rows": {},
+                "cells": {}
+              },
+              "settings": {
+                "minrow": 1,
+                "maxrow": 100,
+                "mincol": -2,
+                "maxcol": 50,
+                "protected": false
+              },
+              "drawings": {},
+              "graphItems": {}
+            },
+            "trigger": {
+              "type": "start",
+              "repeat": "endless"
+            }
+          }
+        ],
+        "settings": {
+          "locale": "en",
+          "isOPCUA": false,
+          "cycletime": 3366
+        },
+        "className": "Machine",
+        "namedCells": {
+          "|MQTT_Producer": {
+            "value": {
+              "id": "PRODUCER_MQTT",
+              "name": "MQTT_Producer",
+              "type": "producer",
+              "state": "connected",
+              "timestamp": 1574082633703
+            },
+            "type": "object",
+            "info": {},
+            "level": 0
+          },
+          "|MQTT_Producer_JSON": {
+            "value": {
+              "id": "BkZjjFR6fS",
+              "name": "MQTT_Producer_JSON",
+              "type": "producer",
+              "state": "connected",
+              "timestamp": 1574082633705
+            },
+            "type": "object",
+            "info": {},
+            "level": 0
+          },
+          "|mymongodb_Prod": {
+            "value": {
+              "id": "HJbz5KHF4r",
+              "name": "mymongodb_Prod",
+              "type": "producer",
+              "state": "connected",
+              "timestamp": 1574082633707
+            },
+            "type": "object",
+            "info": {},
+            "level": 0
+          },
+          "|ckc_producer": {
+            "value": {
+              "id": "SJWQ2zB1hB",
+              "name": "ckc_producer",
+              "type": "producer",
+              "state": "disconnected",
+              "timestamp": 1574082778175
+            },
+            "type": "object",
+            "info": {},
+            "level": 0
+          }
+        },
+        "defproperties": {
+          "attributes": {
+            "cell": {
+              "level": 0,
+              "protected": true,
+              "visible": true,
+              "key": false
+            },
+            "sheet": {
+              "defaultsectionsize": 2000,
+              "initialsection": 0
+            }
+          },
+          "formats": {
+            "styles": {
+              "brightness": 0,
+              "fillstyle": 0,
+              "fillcolor": "#FFFFFF",
+              "gradientcolor": "#CCCCCC",
+              "gradientcolorstops": "",
+              "gradientangle": 0,
+              "gradienttype": 0,
+              "gradientoffset_x": 0,
+              "gradientoffset_y": 0,
+              "linecolor": "#000000",
+              "linewidth": -1,
+              "linestyle": 1,
+              "lineshape": 0,
+              "linetransparency": 100,
+              "pattern": "",
+              "patternstyle": 0,
+              "transparency": 100,
+              "leftbordercolor": "#000000",
+              "leftborderstyle": 0,
+              "leftborderwidth": 1,
+              "topbordercolor": "#000000",
+              "topborderstyle": 0,
+              "topborderwidth": 1,
+              "rightbordercolor": "#000000",
+              "rightborderstyle": 0,
+              "rightborderwidth": 1,
+              "bottombordercolor": "#000000",
+              "bottomborderstyle": 0,
+              "bottomborderwidth": 1
+            },
+            "text": {
+              "baseline": "alphabetic",
+              "valign": 2,
+              "halign": 3,
+              "fontsize": 9,
+              "fontname": "Verdana",
+              "fontcolor": "#000000",
+              "fontstyle": 0,
+              "vposition": 3,
+              "hpostion": 3,
+              "richtext": true,
+              "lineheight": 1.2,
+              "numberformat": "General",
+              "localculture": "general"
+            }
+          }
+        },
+        "previewImage": "data:image/png;base64,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"
+      },
+      "graph": {
+        "id": "S1nTVSy3B",
+        "graphdef": {
+          "type": "machinegraph",
+          "version": "2",
+          "uniqueid": "1",
+          "o-outbox": {
+            "split": "5000",
+            "width": "5000"
+          },
+          "a-graphitem": [
+            {
+              "id": "1000",
+              "o-attributes": {
+                "o-sheetid": {
+                  "v": "H1f9TVr13S",
+                  "t": "s"
+                }
+              },
+              "o-pin": {
+                "o-p": {
+                  "o-x": {
+                    "v": "11000"
+                  },
+                  "o-y": {
+                    "v": "7000"
+                  }
+                },
+                "o-lp": {
+                  "o-x": {
+                    "f": "WIDTH%20*%200.5",
+                    "v": "10500"
+                  },
+                  "o-y": {
+                    "f": "HEIGHT%20*%200.5",
+                    "v": "6500"
+                  }
+                }
+              },
+              "o-size": {
+                "o-w": {
+                  "v": "21000"
+                },
+                "o-h": {
+                  "v": "13000"
+                }
+              },
+              "o-inbox": {
+                "split": "5000",
+                "width": "5000"
+              },
+              "o-processsheet": {
+                "o-attributes": {
+                  "o-calcondemand": {
+                    "v": "true",
+                    "t": "b"
+                  }
+                },
+                "o-name": {
+                  "v": "S1",
+                  "t": "s"
+                },
+                "o-rows": {},
+                "o-columns": {
+                  "a-section": [
+                    {
+                      "index": "0",
+                      "title": "COMMENT",
+                      "size": "0",
+                      "visible": "0"
+                    },
+                    {
+                      "index": "1",
+                      "title": "IF",
+                      "size": "700",
+                      "visible": "1"
+                    }
+                  ]
+                },
+                "o-drawings": {},
+                "o-defaultcell": {
+                  "o-cell": {}
+                },
+                "o-data": {
+                  "a-r": [
+                    {
+                      "n": "2",
+                      "a-c": [
+                        {
+                          "n": "4",
+                          "o-cell": {
+                            "o-a": {
+                              "o-key": {
+                                "v": "true",
+                                "t": "b"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "n": "5",
+                          "o-cell": {
+                            "o-a": {
+                              "o-key": {
+                                "v": "true",
+                                "t": "b"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "n": "3",
+                      "a-c": [
+                        {
+                          "n": "4",
+                          "o-cell": {
+                            "o-a": {
+                              "o-key": {
+                                "v": "true",
+                                "t": "b"
+                              },
+                              "o-level": {
+                                "v": "1"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "n": "5",
+                          "o-cell": {
+                            "o-a": {
+                              "o-key": {
+                                "v": "true",
+                                "t": "b"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "n": "4",
+                      "a-c": [
+                        {
+                          "n": "4",
+                          "o-cell": {
+                            "o-a": {
+                              "o-key": {
+                                "v": "true",
+                                "t": "b"
+                              },
+                              "o-level": {
+                                "v": "2"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "n": "5",
+                          "o-cell": {
+                            "o-a": {
+                              "o-key": {
+                                "v": "true",
+                                "t": "b"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "n": "5",
+                      "a-c": [
+                        {
+                          "n": "4",
+                          "o-cell": {
+                            "o-a": {
+                              "o-key": {
+                                "v": "true",
+                                "t": "b"
+                              },
+                              "o-level": {
+                                "v": "3"
+                              }
+                            }
+                          }
+                        },
+                        {
+                          "n": "5",
+                          "o-cell": {
+                            "o-a": {
+                              "o-key": {
+                                "v": "true",
+                                "t": "b"
+                              }
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "o-images": {}
+        },
+        "machineId": "BJlcpESk2B"
+      }
+    }
+  ],
+  "streams": [
+    {
+      "id": "HkxUEMSJhr",
+      "name": "ckc_connector",
+      "disabled": false,
+      "className": "ConnectorConfiguration",
+      "lastModified": "2019-11-18T13:10:32.604Z",
+      "lastAccessed": "2019-11-17T21:57:02.239Z",
+      "provider": {
+        "_id": "@cedalo/ciscok4c-stream",
+        "id": "@cedalo/ciscok4c-stream",
+        "className": "ProviderConfiguration",
+        "isRef": true
+      },
+      "client_id": "Bpw8qejWXVQur3n6YAdqQAYtd94a",
+      "client_secret": "nOZd6gw9_ORlJcZkgRifzMB6nzQa",
+      "username": "evangelos.@devnet.com",
+      "password": "Iot4Streams!"
+    },
+    {
+      "id": "SJWQ2zB1hB",
+      "name": "ckc_producer",
+      "disabled": false,
+      "className": "ProducerConfiguration",
+      "lastModified": "2019-11-18T13:10:32.606Z",
+      "lastAccessed": "2019-11-17T21:59:06.790Z",
+      "connector": {
+        "_id": "HkxUEMSJhr",
+        "id": "HkxUEMSJhr",
+        "className": "ConnectorConfiguration",
+        "disabled": false,
+        "lastModified": "2019-11-17T21:58:42.995Z",
+        "lastAccessed": "2019-11-17T21:57:02.239Z",
+        "isRef": true
+      },
+      "mimeType": "auto"
+    }
+  ]
+}
