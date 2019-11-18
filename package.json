@@ -16,7 +16,7 @@
     "url": "https://github.com/evlach/sts-stream-ciscok4c/streamsheets/issues"
   },
   "devDependencies": {
-    "eslint": "3.19.0",
+    "eslint": "6.6.0",
     "eslint-config-cedalo": "git+ssh://git@github.com/cedalo/eslint-config-cedalo.git",
     "eslint-config-prettier": "3.3.0",
     "jest": "21.2.1",
