@@ -13,14 +13,9 @@
   },
   "author": "evangelos.vlachogiannis@gmail.com",
   "bugs": {
-    "url": "https://github.com/evlach/sts-stream-ciscok4c/streamsheets/issues"
+    "url": "https://github.com/evlach/sts-stream-ciscok4c/issues"
   },
   "devDependencies": {
-    "eslint": "3.19.0",
-    "eslint-config-cedalo": "git+ssh://git@github.com/cedalo/eslint-config-cedalo.git",
-    "eslint-config-prettier": "3.3.0",
-    "jest": "21.2.1",
-    "jest-cli": "21.2.1"
   },
   "dependencies": {
     "ckc-api": "^0.0.1",
